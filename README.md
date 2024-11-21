@@ -20,6 +20,10 @@ Este proyecto es una prueba técnica que muestra un mapa interactivo con una lis
 * Leaflet (librería para mapas)
 * Tailwind CSS (framework CSS)
 
+## Ver el proyecto en línea
+
+[Ver proyecto en GitHub Pages](https://davidesuzzarellu.github.io/51Trips/) 
+
 ## Notas
 
 * Este proyecto no tiene un `package.json` ya que no utiliza ningún gestor de paquetes.
