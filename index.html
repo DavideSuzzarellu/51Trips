@@ -1,0 +1,41 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de un País</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="flex flex-col justify-start flex-grow h-screen gap-5 px-10 pt-10 mx-auto md:pt-6 max-w-7xl md:px-40">
+    <header class="flex flex-col items-start justify-start w-full h-auto gap-4">
+        <h1 class="text-2xl font-semibold uppercase sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-black-51trips">
+            Aventura en la selva y en montañas
+        </h1>
+        <section class="flex flex-row items-center justify-start gap-4">
+            <span class="text-xl">Fecha actual:</span>
+            <span class="text-lg text-center" id="date">
+        </section>
+        <section class="flex flex-col items-start justify-between w-full gap-5 md:flex-row">
+            <div class="w-auto h-auto">
+                <ul class="flex flex-col gap-2" id="cityList">
+                </ul>
+            </div>
+            <aside class="flex flex-col w-auto gap-3 p-4 border rounded-md md:ms-auto item-center border-black-51trips">
+                <label class="flex flex-row items-center justify-between gap-2">
+                    Elige el color del relleno:
+                    <input type="color" id="backgroundColor" value="#E3DECE"
+                        class="border rounded-sm border-black-51trips">
+                </label>
+            </aside>
+        </section>
+    </header>
+    <div id="map" class="self-center w-full bg-white h-72"></div>
+</body>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="app.js"></script>
+
+</html>
